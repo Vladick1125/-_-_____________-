@@ -1,0 +1,43 @@
+﻿<Window x:Class="МосквинКульбацкий_И_____________Серега.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:МосквинКульбацкий_И_____________Серега"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="400">
+    <Grid>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Логин или Email:" Background="HotPink"/>
+        <TextBox Grid.Row="1" x:Name="loginTextBox"/>
+
+        <TextBlock Grid.Row="2" Text="Пароль:" Background="HotPink"/>
+        <PasswordBox Grid.Row="3" x:Name="passwordBox1"/>
+
+        <TextBlock Grid.Row="4" Text="Подтвердите пароль:" Background="HotPink"/>
+        <PasswordBox Grid.Row="5" x:Name="passwordBox2"/>
+
+
+        <Button Grid.Row="6" Content="Зарегистрироваться" Click="Login_Click" Background="Gold" />
+        <Button Grid.Row="9" Content="Войти" Click="Login_Click" Background="Gold" />
+
+
+
+        <TextBlock Grid.Row="8" Text="Уже есть аккаунт? войдите!" Background="HotPink"/>
+        <TextBlock Grid.Row="7" Text="перед тем, как зарегистрироваться вы подтверждаете согласие с тем, что ваши данные будут слиты в интернет" TextWrapping="Wrap" Background="HotPink"/>
+    </Grid>
+</Window>
